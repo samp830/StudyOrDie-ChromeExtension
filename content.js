@@ -10,6 +10,11 @@ document.addEventListener("keydown", handler,true);
 
 
 
+chrome.runtime.sendMessage({greeting: "screamo"}, function() {
+	console.log("success");
+});
+
+
   
    
 
