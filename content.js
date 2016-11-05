@@ -1,17 +1,32 @@
 
 var handler = function (e) { 
     handler.data.push(e);
-    console.log(handler.data);
 }
+document.addEventListener("keydown", handler,true);
 handler.data = [];
-console.log("background running");
 window.addEventListener("keydown", handler);
+
+
+/////////
+var n=0;
+
 document.onkeypress = function (e) {
  e = e || window.event; 
  var charCode = e.charCode || e.keyCode, character = String.fromCharCode(charCode); 
  console.log(charCode)
- 
-};	
+ n++;
+ //console.log(n);
+};
+function ifloop(){
+console.log(changeInfo.status)
+if (n< 10){
+	screamo();
+}
+n=0;
+
+}
+var ding = window.setInterval(ifloop,15000);
+
 
 function bad1(){
 	//This is like what happens if you idle
@@ -21,20 +36,21 @@ function bad1(){
 
 
 }
+var sy = 0;
 function screamo(){
-//chrome.tabs.create({ url: "Http://akk.li/pics/anne.jpg" })
-console.log("why")
-}
-
-document.addEventListener("keydown", handler,true);
-
-
-
-chrome.runtime.sendMessage({greeting: "screamo"}, function() {
+	if (sy == 0){
+		chrome.runtime.sendMessage({greeting: "screamo"}, function() {
 	console.log("success");
-});
+		});
+		sy=1;
+		window.setTimeout(reset,14000);
+				}
+					}
 
 
+function reset(){
+	sy = 0
+}
   
    
 
