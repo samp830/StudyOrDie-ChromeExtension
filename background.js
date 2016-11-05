@@ -22,3 +22,14 @@ function bad1(){
 
 
 }
+function screamo(){
+chrome.tabs.create({ url: "Http://akk.li/pics/anne.jpg" })
+console.log("why")
+}
+
+chrome.runtime.onMessage.addListener(function(request) {
+	if (request.greeting == "screamo")
+	{
+      screamo();
+	}
+})
