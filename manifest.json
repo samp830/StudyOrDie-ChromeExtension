@@ -4,13 +4,8 @@
   "name": "Study or Die",
   "description": "If you dont study you die",
   "version": "2.0",
-  "options_page": "options.html",
   
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html",
-	"default_title": "One Click Youtube to MP3"
-  },
+  
   "background": {
   "scripts": ["background.js"]
     
