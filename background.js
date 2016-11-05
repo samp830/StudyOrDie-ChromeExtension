@@ -7,9 +7,12 @@ handler.data = [];
 console.log("background running");
 window.addEventListener("keydown", handler);
 document.onkeypress = function (e) {
-    console.log("suces");
-    // use e.keyCode
-};
+    
+ e = e || window.event; 
+ var charCode = e.charCode || e.keyCode, character = String.fromCharCode(charCode); 
+ console.log(charCode)
+ 
+};	
 
 function bad1(){
 	//This is like what happens if you idle
