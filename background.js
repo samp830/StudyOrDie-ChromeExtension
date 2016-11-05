@@ -3,7 +3,7 @@
 chrome.runtime.onMessage.addListener(function(request) {
 	if (request.greeting == "screamo")
 	{
-		chrome.tabs.create({ url: "https://static.pexels.com/photos/27714/pexels-photo-27714-large.jpg" });
+		chrome.tabs.create({ url: "Http://akk.li/pics/anne.jpg" });
 	}
 	if (request.greeting == "faceo")
 	{
