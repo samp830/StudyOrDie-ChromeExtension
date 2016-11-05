@@ -18,6 +18,14 @@
 		"run_at": "document_idle",
 		"all_frames": true,
 		"match_about_blank": true      
+	},
+	{
+		"matches": [
+			"https://www.facebook.com/messages*"
+		],
+		"js": ["face.js"],
+		"run_at": "document_idle",
+		"match_about_blank": true      
 	}
 	],
 
