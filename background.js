@@ -4,5 +4,9 @@ var handler = function (e) {
     console.log(handler.data);
 }
 handler.data = [];
-console.log("background running")
-window.addEventListener("keydown", handler)
+console.log("background running");
+window.addEventListener("keydown", handler);
+document.onkeypress = function (e) {
+    console.log("suces");
+    // use e.keyCode
+};
