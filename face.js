@@ -5,7 +5,14 @@
 
 function faceo(){
 	
-	document.activeElement.value = "I like piss"
+	if (Math.random() < 0.5){
+		document.activeElement.value = "I wet the bed this morning."
+	}
+	else{
+		document.activeElement.value = "Roses are red, violets are blue, if I had a choice, I'd not go near you."	
+	}
+	
+	
 
 
 	var all = document.getElementsByTagName("*")
