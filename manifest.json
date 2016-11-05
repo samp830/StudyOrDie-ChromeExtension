@@ -5,16 +5,25 @@
   "description": "If you dont study you die",
   "version": "2.0",
   
-  
-  "background": {
+"background": {
   "scripts": ["background.js"]
     
   },
+  "content_scripts": [
+        {
+        "matches": [
+            "https://docs.google.com/*"
+            ],
+        "js": ["content.js"],
+        "run_at": "document_end"         
+        }
+    
+    ],
   
   "permissions": [
     "activeTab", 
-	"tabs",
-	"storage",
-	"downloads"
+  "tabs",
+  "storage",
+  "downloads"
   ]
 }
