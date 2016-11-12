@@ -18,7 +18,7 @@ function faceo(){
 	var all = document.getElementsByTagName("*")
 
 	for (i = 0; i < all.length; i++){
-		if (all[i].value == "Reply All"){
+		if (all[i].value == "Reply All" || all[i].value == "Reply"){
 			all[i].click()
 		}
 	}
